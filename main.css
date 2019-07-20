@@ -4,19 +4,21 @@
 
 
 /*电脑版本*/
+body{margin: 0}
+.box{text-align: center;line-height: 28px;}
 @media screen and (min-width:501px){
     .box{
-        width: 600px;
         background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
         border-radius: 10px;
-        margin: 0 auto;
         color: aliceblue;
-        margin: auto;
+        padding: 0 40px;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
+        width: 520px;
+        margin: 0 auto;
     }
     .box img{
         width: 200px;
@@ -71,20 +73,14 @@
     .box{
         width: 100%;
         background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
-
-        margin: 0 auto;
+        box-sizing: border-box;
         color: aliceblue;
-        margin: auto;
+        padding: 0 40px;
         position: absolute;
         top: 0;
+        bottom: 0;
         left: 0;
         right: 0;
-        bottom: 0;
-    }
-    .box img{
-        width:150px;
-        height: 150px;
-        border-radius: 5px;
     }
     .box p{
         padding-top: 30px;
@@ -94,8 +90,6 @@
         margin-top:3%;
         width: 99%;
         height: 80px;
-
-
     }
     .left{
         display: inline-block;
@@ -110,10 +104,7 @@
         font-weight: bold;
         cursor: pointer;
     }
-    .left:hover{
-        background-color:#328732;
 
-    }
     .right{
         cursor: pointer;
         display: inline-block;
@@ -124,14 +115,27 @@
         border-radius: 5px;
         line-height: 40px;
         font-size: 16px;
-
     }
-    .right:hover{
-        border-color:#B11C18;
-    }
-
-
-
 
 }
+
+.add_wx{padding: 3px 6px;border-radius: 6px;background-color: #ff0900;}
+.mask{display:none;background-color: rgba(0,0,0,0.4);position: absolute;top: 0;bottom: 0;right: 0;left: 0;z-index: 99;}
+.mask .dialog{display: flex;justify-content:center;align-items: center;width: 100%;height: 100%;}
+.modal-dialog{width: 90%; color: #3c3c3c;text-align: left;}
+
+/*conent start*/
+.conent{width:90px;height:120px;position:absolute;top:20px;}
+.conent .sition{width:90px;height:120px;position:relative;}
+.conent .sition .c_header{width:90px;text-align:center;cursor:move;}
+.conent .sition .c_header .txt{color:#00CC00;font-weight:600;font-size:15px;line-height:30px;box-shadow:1px 1px 1px 1px #000;text-shadow:1px 1px 1px #000;}
+.conent .sition .c_adver{width:90px;height:90px;}
+.conent .sition .sign{width:0px;height:10px;border:2px solid #000;display:block;position:absolute;top:27px;left:46px;}
+/*end conent*/
+/*data start*/
+.data{width:260px;height:130px;margin:255px auto;color:#036;}
+.data p{line-height:20px;}
+.data p .high{color:red;}
+.data p .dispaly{color:#00F;}
+/*end data*/
 
